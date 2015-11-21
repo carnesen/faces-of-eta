@@ -67,7 +67,7 @@ function onReady() {
  * Fetch the data using AJAX. When the data is received, store it in the
  * "students" global variable and render the student viewer to the DOM.
  */
-$.ajax('/data/').done(function(data) {
+$.ajax('eta.json').done(function(data) {
 
   students = data.eta;
 
