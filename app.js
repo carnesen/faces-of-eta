@@ -39,7 +39,12 @@ function changeIndex(direction) {
 function render() {
   var template = $('#template').html();
   var html = Handlebars.compile(template)(students[index]);
-  $('.person').html(html);
+  $('.person').fadeOut({
+    complete: function() {
+      $(this).html(html);
+      $(this).fadeIn();
+    }
+  });
 }
 
 /**
