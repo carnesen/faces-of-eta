@@ -20,8 +20,10 @@
 
     <script id="template" type="text/x-handlebars-template">
 
-      <img src="img/{{firstName}} {{lastName}} 1.jpg"/>
-      <div class="name">{{firstName}} {{lastName}}</div>
+      <div class="id">
+        <img src="img/{{firstName}} {{lastName}} 1.jpg"/>
+        <span class="name">{{firstName}} {{lastName}}</span>
+      </div>
       {{#each favoriteMovies}}
         <div class="movie">{{this.movieName}} ({{this.releaseYear}})</div>
       {{/each}}

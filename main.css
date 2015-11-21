@@ -32,17 +32,17 @@ header, footer, .clearfix {
 .person {
   width: 70%;
   margin: auto;
+  padding: 3%
 }
 
 img {
   width: 34%;
+  vertical-align: middle;
 }
 
 .name {
   width: 66%;
-  float:right;
   font-size: 2em;
-  text-align: center;
 }
 
 .movie {
