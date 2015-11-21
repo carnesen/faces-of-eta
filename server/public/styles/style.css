@@ -1,0 +1,52 @@
+* {
+  /*border: dotted 1px;*/
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  min-height: 300px;
+}
+
+header, footer, .clearfix {
+  text-align: center;
+  clear: both;
+}
+
+.nav {
+  font-size: 10em;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.person {
+  width: 70%;
+  margin: auto;
+}
+
+img {
+  width: 34%;
+}
+
+.name {
+  width: 66%;
+  float:right;
+  font-size: 2em;
+  text-align: center;
+}
+
+.movie {
+  width: 31%;
+  float: left;
+  padding: 15px;
+}

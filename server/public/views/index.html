@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8"/>
+  <title>η weekend 2</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script type="text/javascript" src="/vendors/handlebars.min.js"></script>
+  <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>η weekend 2</h1>
+  </header>
+
+  <main>
+
+    <div class="nav left">〈</div>
+    <div class="nav right">〉</div>
+
+    <script id="template" type="text/x-handlebars-template">
+
+      <img src="/img/{{firstName}} {{lastName}} 1.jpg"/>
+      <div class="name">{{firstName}} {{lastName}}</div>
+      {{#each favoriteMovies}}
+        <div class="movie">{{this.movieName}} ({{this.releaseYear}})</div>
+      {{/each}}
+
+    </script>
+
+    <div class="person"></div>
+
+
+  </main>
+
+  <footer>
+    Chris Arnesen
+  </footer>
+
+</body>
+
+</html>
