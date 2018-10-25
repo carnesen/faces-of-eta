@@ -38,6 +38,7 @@ function changeIndex(direction) {
  */
 function render() {
   var template = $('#template').html();
+  students[index].photoIndex = Math.floor(Math.random()*students[index].numPhotos)+1
   var html = Handlebars.compile(template)(students[index]);
   $('.person').fadeOut({
     complete: function() {
